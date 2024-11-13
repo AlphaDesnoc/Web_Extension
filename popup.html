@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Extractor</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 15px;
+    }
+    #result {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      min-height: 50px;
+      max-height: 200px;
+      overflow-y: auto;
+      word-wrap: break-word;
+    }
+    .button-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h3>Liste extraite</h3>
+  <div id="result">Cliquez sur "Extraire" pour commencer...</div>
+  <div class="button-container">
+    <button id="extractButton">Extraire</button>
+    <button id="copyButton">Copier</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
